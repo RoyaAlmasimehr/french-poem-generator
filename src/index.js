@@ -1,5 +1,5 @@
 function displayPoem(response){
-    console.log(response.data.answer);
+   
        new Typewriter("#poem", {
          strings: response.data.answer,
          autoStart: true,
@@ -28,9 +28,7 @@ poemElement.innerHTML = ` <div class="blink"> ⌛️  Generating a French poem a
 
     axios.get(apiUrl).then(displayPoem);
 
-    console.log("Generating poem");
-    console.log(`Prompt:${prompt}`);
-    console.log(`Context :${context}`);
+   
    
  
 }
